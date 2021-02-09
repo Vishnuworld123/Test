@@ -4,7 +4,7 @@ from django.core.paginator import Paginator
 from .models import Employee
 from rest_framework.decorators import api_view
 
-
+# Hi Everyone
 
 def get_data(request):
     emp = Employee.objects.all()

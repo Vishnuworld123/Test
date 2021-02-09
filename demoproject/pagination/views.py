@@ -27,3 +27,5 @@ def save_data(request):
     return HttpResponse('Employee created successfully...!')
 
 
+def func():
+    pass

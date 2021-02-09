@@ -8,6 +8,7 @@ from rest_framework.decorators import api_view
 
 def get_data(request):
     emp = Employee.objects.all()
+    print(emp)
     paginator = Paginator(emp, 5) # Show 5 emps per page.
     print(paginator.count)
     page_number = request.GET.get('page')  #2
